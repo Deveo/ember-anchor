@@ -1,9 +1,9 @@
 import Ember from 'ember';
 import ViewSupport from 'ember-anchor/mixins/view-support';
 
-const { on, View } = Ember;
+const { on } = Ember;
 
-export default View.extend(ViewSupport, {
+export default Ember.Component.extend(ViewSupport, {
   onScrolledToElement: on('scrolledToElement', element => {
     element.addClass('highlight');
   })

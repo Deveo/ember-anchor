@@ -13,15 +13,15 @@ test('visiting /', assert => {
   click('.third-link');
 
   andThen(function() {
-    assert.equal(currentURL(), '/?a=third');
-    assert.ok($('[data-a=third]').hasClass('highlight'), 'Element is highlighted');
+    assert.equal(currentURL(), '/?anc=third');
+    assert.ok($('[data-anc=third]').hasClass('highlight'), 'Element is highlighted');
   });
 
   click('.second-link');
 
   andThen(function() {
-    assert.equal(currentURL(), '/?a=second');
-    assert.ok($('[data-a=second]').hasClass('highlight'), 'Element is highlighted');
+    assert.equal(currentURL(), '/?anc=second');
+    assert.ok($('[data-anc=second]').hasClass('highlight'), 'Element is highlighted');
   });
 });
 

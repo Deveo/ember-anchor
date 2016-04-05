@@ -1,8 +1,9 @@
-{{link-to 'Go to First' 'index' (query-params a='first') class='first-link'}}
-{{link-to 'Go to Second' 'index' (query-params a='second') class='second-link'}}
-{{link-to 'Go to Third' 'index' (query-params a='third') class='third-link'}}
+{{ember-anchor a=anc}}
+{{link-to 'Go to First' 'index' (query-params anc='first') class='first-link'}}
+{{link-to 'Go to Second' 'index' (query-params anc='second') class='second-link'}}
+{{link-to 'Go to Third' 'index' (query-params anc='third') class='third-link'}}
 
-<div data-a='first'>
+<div data-anc='first'>
   <h5>First</h5>
 
   <p>
@@ -14,7 +15,7 @@
   </p>
 </div>
 
-<div data-a='second'>
+<div data-anc='second'>
   <h5>Second</h5>
 
   <p>
@@ -26,7 +27,7 @@
   </p>
 </div>
 
-<div data-a='third'>
+<div data-anc='third'>
   <h5>Third</h5>
 
   <p>
